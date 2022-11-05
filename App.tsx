@@ -15,11 +15,11 @@ export default function App() {
         task.taskStatus = 'completed';
       }
     });
-    /* let filteredData = toDoList.filter((task) => task.taskName == taskSelected); */
     setToDoList([...reAssignData]);
   };
   return (
     <div>
+      <h2>ToDo List</h2>
       <input
         type="text"
         value={task}
